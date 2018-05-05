@@ -102,7 +102,7 @@ h3 {
 .little-container {
   display: flex;
   padding: 1rem;
-  background-color: yellow;
+  background-color: lightgray;
   border: 1px solid gray;
   align-items: center;
 }
@@ -116,4 +116,60 @@ h3 {
 .little-container .photo img {
   width: 100%;
   height: auto;
+}
+.little-container .words h3,
+.little-container .words p,
+.little-container .words span {
+  margin: 0.5rem;
+}
+/* COURSES */
+#courses {
+  max-width: 1500px;
+  margin: 0 auto;
+  background-color: beige;
+  border: 1px solid white;
+}
+#courses h1 {
+  width: 100%;
+  text-align: center;
+  margin: 2rem auto;
+}
+.courses {
+  width: 100%;
+}
+.courses .courses-container:first-child {
+  margin-bottom: 0.5rem;
+}
+.courses-container {
+  display: flex;
+  margin: 2rem 4.5rem;
+}
+.little-container.course {
+  display: flex;
+  flex-direction: column;
+}
+.little-container.course {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 100%;
+  margin: 0 1rem;
+}
+.little-container.course .img {
+  width: 100%;
+}
+.little-container.course .img img {
+  width: 100%;
+}
+.little-container.course .font {
+  width: 100%;
+}
+.little-container.course .font h3 {
+  padding: 1rem 0.5rem 0.5rem 1rem;
+}
+.little-container.course .font p {
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+}
+.little-container.course .font p:last-child{
+  padding-bottom: 1.5em;
 }
