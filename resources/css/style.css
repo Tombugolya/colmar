@@ -1,25 +1,75 @@
-
 /* Royal Blue --- rgb(43, 64, 112);
 Dark Blue --- rgb(57, 68, 89);
 Whiteish --- rgb(242, 244, 239);
 Orange Brown --- rgb(189, 139, 118);
 Teal --- rgb(118, 189, 179);
 Dark Teal --- rgb(48, 112, 103);
-Brown --- rgb(114, 87, 86); */
+Brown --- rgb(114, 87, 86);
+Greenish --- rgb(129, 142, 79);
+Dark Red --- rgb(189, 153, 79);
+Goldish --- rgb(189, 153, 79); */
+
+/* Main Colors */
+.header {
+  background-color: rgb(242, 244, 239);
+}
+.main-banner {
+  background-color: rgb(242, 244, 239);
+  background-image: url(../inspiration/background2.jpg);
+  max-width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.content {
+  background-color: rgb(242, 244, 239);
+}
+#courses {
+  background-color: rgb(242, 244, 239);
+}
+#footer {
+  background-color: rgb(242, 244, 239);
+}
+.end {
+  background-color: rgb(57, 68, 89);
+}
+.little-container {
+  background-color: #A9A9A9;
+}
+.little-container:hover {
+  background-color: LightGray;
+}
+.button span {
+  background-color: rgb(57, 68, 89);
+}
+.button span:hover {
+  background-color: rgb(48, 112, 103);
+}
+
+/* Universal */
 
 html {
   font-size: 16px;
   font-family: Helvetica;
-  background-image: url(../images/background.jpg);
+  /* background-image: url(../inspiration/pattern3.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+  background: linear-gradient(lightblue, white);
 }
 h1 {
   font-size: 3rem;
+  font-weight: bold;
+  color: #191919;
+}
+h2 {
+  color: #191919;
 }
 h3 {
   font-size: 1.5rem;
   font-weight: bold;
+  color: #191919;
+}
+p {
+  color: #191919;
 }
 a {
   text-decoration: none;
@@ -34,7 +84,6 @@ a {
   width: 100%;
   height: 4rem;
   color: rgb(43, 64, 112);
-  background-color: rgb(242, 244, 239);
   border-bottom: 1px solid black;
 }
 .logo {
@@ -59,7 +108,6 @@ a {
   align-items: center;
   max-width: 1500px;
   margin: 0 auto;
-  background-color: rgb(189, 139, 118);
 }
 .text {
   width: 40%;
@@ -74,12 +122,15 @@ a {
 .text h1 {
   font-weight: bold;
 }
+.button {
+  padding-top: 2rem;
+}
 .button span {
-  padding: 0.5rem 6rem;
+  padding: 1.5rem 6rem;
   color: white;
   border: 1px solid black;
-  background-color: rgb(57, 68, 89);
   text-align: center;
+  transition: all 500ms linear 0s;
 }
 .button,
 .text h1 {
@@ -89,9 +140,8 @@ a {
   color: rgb(242, 244, 239);
 }
 .button span:hover {
-  background-color: rgb(48, 112, 103);
   color: black;
-  border: 1px solid black;
+  text-shadow: 2px 2px black;
 }
 /* CONTENT */
 .words a {
@@ -104,7 +154,6 @@ a {
   display: flex;
   max-width: 1500px;
   margin: 0 auto;
-  background-color: rgb(242, 244, 239);
 }
 .content-container {
   width: 60%;
@@ -133,12 +182,9 @@ a {
   display: flex;
   align-items: center;
   width: 90%;
-  padding: 1rem;
   border: 1px solid gray;
-  background-color: LightGray;
-}
-.little-container:hover {
-  background-color: #A9A9A9	;
+  padding: 1rem;
+  transition: background-color 300ms linear 0s;
 }
 .little-container .photo {
   width: 35%;
@@ -160,7 +206,6 @@ a {
 #courses {
   max-width: 1500px;
   margin: 0 auto;
-  background-color: beige;
   border-top: 3px solid transparent;
   border-bottom: 3px solid transparent;
 }
@@ -239,7 +284,6 @@ a {
   max-width: 1500px;
   height: 200px;
   margin: 0 auto;
-  background-color: rgb(57, 68, 89);
 }
 .end span {
   margin: 1rem 1.5rem;
