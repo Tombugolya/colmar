@@ -8,6 +8,10 @@ h1 {
 h3 {
   font-size: 1.5rem;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
 /* HEADER */
 .header {
   display: flex;
@@ -31,10 +35,6 @@ h3 {
 }
 .nav span {
   margin: auto 1rem;
-}
-.nav a {
-  text-decoration: none;
-  color: black;
 }
 /* MAIN BANNER */
 .main-banner {
@@ -193,8 +193,6 @@ h3 {
 .video-item {
   width: 60%;
   padding: 1.5rem;
-  /* border: 1px solid white; */
-  /* background-color: seagreen; */
 }
 .video-item  video {
   width: 100%;
@@ -208,8 +206,15 @@ h3 {
   width: 40%;
   /* border: 1px solid white; */
 }
-/* .little-container.thesis {
+/* REAL FOOTER */
+.end {
+  height: 200px;
+  max-width: 1500px;
+  margin: 0 auto;
   display: flex;
-  padding: 1rem;
-  max-width: 90%;
-} */
+  justify-content:space-between;
+  background-color: seagreen;
+}
+.end span {
+  margin: 1rem 1.5rem;
+}
