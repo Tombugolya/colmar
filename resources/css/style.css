@@ -105,6 +105,7 @@ h3 {
   background-color: lightgray;
   border: 1px solid gray;
   align-items: center;
+  width: 90%;
 }
 .little-container .photo {
   width: 35%;
@@ -173,3 +174,42 @@ h3 {
 .little-container.course .font p:last-child{
   padding-bottom: 1.5em;
 }
+/* FOOTER */
+#footer {
+  max-width: 1500px;
+  margin: 0 auto;
+  background-color: brown;
+  border: 1px solid white;
+}
+#footer h1 {
+  width: 100%;
+  text-align: center;
+  margin: 2rem auto;
+}
+.footer {
+  display: flex;
+  align-items: flex-start;
+}
+.video-item {
+  width: 60%;
+  padding: 1.5rem;
+  /* border: 1px solid white; */
+  /* background-color: seagreen; */
+}
+.video-item  video {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+  width: 40%;
+  /* border: 1px solid white; */
+}
+/* .little-container.thesis {
+  display: flex;
+  padding: 1rem;
+  max-width: 90%;
+} */
