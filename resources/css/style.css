@@ -15,10 +15,11 @@ html {
   background-repeat: no-repeat;
 }
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 h3 {
   font-size: 1.5rem;
+  font-weight: bold;
 }
 a {
   text-decoration: none;
@@ -71,7 +72,6 @@ a {
  width: 100%;
 }
 .text h1 {
-  font-size: 2.5rem;
   font-weight: bold;
 }
 .button span {
@@ -167,6 +167,7 @@ a {
 #courses h1 {
   text-align: center;
   margin: 2rem auto;
+  font-size: 3rem;
 }
 .courses .courses-container:first-child {
   margin-bottom: 0.5rem;
@@ -191,6 +192,7 @@ a {
 }
 .little-container.course .font h3 {
   padding: 1rem 0.5rem 0.5rem 1rem;
+
 }
 .little-container.course .font p {
   padding: 0.5rem 0.5rem 0.5rem 1rem;
