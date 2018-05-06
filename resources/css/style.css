@@ -1,6 +1,18 @@
+
+/* Royal Blue --- rgb(43, 64, 112);
+Dark Blue --- rgb(57, 68, 89);
+Whiteish --- rgb(242, 244, 239);
+Orange Brown --- rgb(189, 139, 118);
+Teal --- rgb(118, 189, 179);
+Dark Teal --- rgb(48, 112, 103);
+Brown --- rgb(114, 87, 86); */
+
 html {
   font-size: 16px;
   font-family: Helvetica;
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 h1 {
   font-size: 2.5rem;
@@ -10,18 +22,18 @@ h3 {
 }
 a {
   text-decoration: none;
-  color: black;
+  color: rgb(43, 64, 112);
 }
+
 /* HEADER */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 4rem;
   width: 100%;
-  position: fixed;
-  z-index: 10;
-  background-color: white;
+  height: 4rem;
+  color: rgb(43, 64, 112);
+  background-color: rgb(242, 244, 239);
   border-bottom: 1px solid black;
 }
 .logo {
@@ -36,14 +48,17 @@ a {
 .nav span {
   margin: auto 1rem;
 }
+.nav a:hover {
+  border-bottom: 2px dotted rgb(189, 139, 118);
+}
 /* MAIN BANNER */
 .main-banner {
   display: flex;
-  align-items: center;
   justify-content: flex-start;
-  background-color: lightgray;
+  align-items: center;
   max-width: 1500px;
   margin: 0 auto;
+  background-color: rgb(189, 139, 118);
 }
 .text {
   width: 40%;
@@ -60,21 +75,36 @@ a {
   font-weight: bold;
 }
 .button span {
-  text-align: center;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 6rem;
   color: white;
-  background-color: gray;
+  border: 1px solid black;
+  background-color: rgb(57, 68, 89);
+  text-align: center;
 }
 .button,
 .text h1 {
   margin: 2rem 0;
 }
+.button a {
+  color: rgb(242, 244, 239);
+}
+.button span:hover {
+  background-color: rgb(48, 112, 103);
+  color: black;
+  border: 1px solid black;
+}
 /* CONTENT */
+.words a {
+  color: rgb(43, 64, 112);
+}
+.words a:hover {
+  border-bottom: 2px dotted rgb(189, 139, 118);
+}
 .content {
   display: flex;
   max-width: 1500px;
   margin: 0 auto;
-  background-color: orange;
+  background-color: rgb(242, 244, 239);
 }
 .content-container {
   width: 60%;
@@ -87,25 +117,28 @@ a {
   width: 90%;
 }
 .item.text h2 {
-  font-size: 2rem;
   margin: 2rem 0;
+  font-size: 2rem;
 }
 .item.text p {
   margin: 2rem 0;
 }
 .article-container {
-  width: 40%;
   display: flex;
   flex-direction: column;
+  width: 40%;
   margin: 2rem 0;
 }
 .little-container {
   display: flex;
-  padding: 1rem;
-  background-color: lightgray;
-  border: 1px solid gray;
   align-items: center;
   width: 90%;
+  padding: 1rem;
+  border: 1px solid gray;
+  background-color: LightGray;
+}
+.little-container:hover {
+  background-color: #A9A9A9	;
 }
 .little-container .photo {
   width: 35%;
@@ -128,15 +161,12 @@ a {
   max-width: 1500px;
   margin: 0 auto;
   background-color: beige;
-  border: 1px solid white;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
 }
 #courses h1 {
-  width: 100%;
   text-align: center;
   margin: 2rem auto;
-}
-.courses {
-  width: 100%;
 }
 .courses .courses-container:first-child {
   margin-bottom: 0.5rem;
@@ -148,21 +178,15 @@ a {
 .little-container.course {
   display: flex;
   flex-direction: column;
-}
-.little-container.course {
-  display: flex;
-  flex-direction: column;
+  max-width: 100%;
   padding: 0;
-  width: 100%;
   margin: 0 1rem;
 }
-.little-container.course .img {
-  width: 100%;
-}
-.little-container.course .img img {
-  width: 100%;
-}
-.little-container.course .font {
+.little-container.course .img,
+.little-container.course .img img,
+.little-container.course .font,
+.courses,
+#courses h1  {
   width: 100%;
 }
 .little-container.course .font h3 {
@@ -178,8 +202,9 @@ a {
 #footer {
   max-width: 1500px;
   margin: 0 auto;
-  background-color: brown;
-  border: 1px solid white;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  background-color: rgb(242, 244, 239);
 }
 #footer h1 {
   width: 100%;
@@ -204,17 +229,27 @@ a {
   flex-direction: column;
   margin-top: 1.5rem;
   width: 40%;
-  /* border: 1px solid white; */
 }
 /* REAL FOOTER */
 .end {
-  height: 200px;
-  max-width: 1500px;
-  margin: 0 auto;
   display: flex;
   justify-content:space-between;
-  background-color: seagreen;
+  max-width: 1500px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: rgb(57, 68, 89);
 }
 .end span {
   margin: 1rem 1.5rem;
+  font-size: 1rem;
+  color: rgb(242, 244, 239);
+}
+.end span:last-child {
+  word-spacing: 1rem;
+}
+.end span a {
+  color: rgb(242, 244, 239)
+}
+.end span a:hover {
+  border-bottom: 2px dotted rgb(189, 139, 118);
 }
