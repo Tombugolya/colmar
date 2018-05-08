@@ -14,11 +14,7 @@ Goldish --- rgb(189, 153, 79); */
   background-color: rgb(242, 244, 239);
 }
 .main-banner {
-  background-color: rgb(242, 244, 239);
-  background-image: url(../inspiration/background2.jpg);
-  max-width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
+  width: 100%;
 }
 .content {
   background-color: rgb(242, 244, 239);
@@ -39,37 +35,39 @@ Goldish --- rgb(189, 153, 79); */
   background-color: LightGray;
 }
 .button span {
-  background-color: rgb(57, 68, 89);
+ background-color: rgba(214, 141, 38, 0.56);
 }
 .button span:hover {
-  background-color: rgb(48, 112, 103);
+  background-color: rgba(214, 141, 38, 0.8);
 }
 
 /* Universal */
 
 html {
   font-size: 16px;
-  font-family: Helvetica;
+  font-family: 'Noto sans';
+  line-height: 1.6;
   /* background-image: url(../inspiration/pattern3.jpg);
   background-size: cover;
   background-repeat: no-repeat; */
   background: linear-gradient(lightblue, white);
 }
+body {
+  line-height: 1.2;
+}
 h1 {
   font-size: 3rem;
-  font-weight: bold;
-  color: #191919;
+  color: #eedf65;
 }
 h2 {
   color: #191919;
 }
 h3 {
   font-size: 1.5rem;
-  font-weight: bold;
   color: #191919;
 }
 p {
-  color: #191919;
+  color: #eff9e4;
 }
 a {
   text-decoration: none;
@@ -102,6 +100,16 @@ a {
 }
 .nav a:hover {
   border-bottom: 2px dotted rgb(189, 139, 118);
+}
+.logo span {
+  font-family: ovo;
+}
+.logo span:last-child {
+  font-family: ovo;
+  color: rgb(189, 139, 118);
+}
+.logo span:nth-child(2) {
+  color: rgb(189, 153, 79);
 }
 
 @media only screen and (max-width: 750px) {
@@ -159,15 +167,33 @@ a {
   }
 }
 /* MAIN BANNER */
+#banner {
+  background-image: url(../images/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .main-banner {
   display: flex;
-  justify-content: flex-start;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
   align-items: center;
-  max-width: 1500px;
+  max-width: 100%;
+  height: 50%;
   margin: 0 auto;
 }
 .text {
   width: 40%;
+  text-align: center;
+}
+.main-banner .text {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
 }
 .main.image {
   width: 60%;
@@ -175,9 +201,6 @@ a {
 }
 .image img {
  width: 100%;
-}
-.text h1 {
-  font-weight: bold;
 }
 .button {
   padding-top: 2rem;
@@ -187,6 +210,7 @@ a {
   width: 100%;
   color: white;
   border: 1px solid black;
+  font-size: 1.5rem;
   text-align: center;
   transition: all 500ms linear 0s;
 }
