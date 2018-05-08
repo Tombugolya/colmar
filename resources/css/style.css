@@ -75,7 +75,9 @@ a {
   text-decoration: none;
   color: rgb(43, 64, 112);
 }
-
+.icons {
+  display: none;
+}
 /* HEADER */
 .header {
   display: flex;
@@ -100,6 +102,61 @@ a {
 }
 .nav a:hover {
   border-bottom: 2px dotted rgb(189, 139, 118);
+}
+
+@media only screen and (max-width: 750px) {
+  .icons {
+    display: inline-block;
+  }
+  .icons .unique {
+    display: none;
+  }
+  .icons img {
+    margin: auto 2rem;
+  }
+  .nav {
+    display: none;
+  }
+  .main-banner {
+    flex-direction: column;
+    background-image: repeating-linear-gradient(teal, rgb(242, 244, 239));
+  }
+  .main-banner .text {
+    width: 80%;
+    text-align: center;
+  }
+  .main-banner .text h1 {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+  .main-banner .main.image {
+    width: 100%;
+    position: relative;
+    bottom: 2rem;
+  }
+  .button {
+    margin-bottom: 3rem;
+  }
+  .courses .courses-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+  }
+  .courses-container .little-container.course {
+    width: 70%;
+    margin: 1rem;
+  }
+  .little-container .words h3 {
+    font-size: 1rem;
+  }
+  .little-container .words p,
+  .little-container .words span {
+    font-size: 0.77rem;
+  }
+  #courses h1,
+  #footer h1 {
+    font-size: 2rem;
+  }
 }
 /* MAIN BANNER */
 .main-banner {
@@ -127,6 +184,7 @@ a {
 }
 .button span {
   padding: 1.5rem 6rem;
+  width: 100%;
   color: white;
   border: 1px solid black;
   text-align: center;
@@ -183,7 +241,7 @@ a {
   align-items: center;
   width: 90%;
   border: 1px solid gray;
-  padding: 1rem;
+  padding: 0.5rem;
   transition: background-color 300ms linear 0s;
 }
 .little-container .photo {
@@ -201,6 +259,7 @@ a {
 .little-container .words p,
 .little-container .words span {
   margin: 0.5rem;
+  max-width: 100%;
 }
 /* COURSES */
 #courses {
@@ -212,7 +271,7 @@ a {
 #courses h1 {
   text-align: center;
   margin: 2rem auto;
-  font-size: 3rem;
+  /* font-size: 3rem; */
 }
 .courses .courses-container:first-child {
   margin-bottom: 0.5rem;
