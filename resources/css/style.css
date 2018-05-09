@@ -17,19 +17,19 @@ Goldish --- rgb(189, 153, 79); */
   width: 100%;
 }
 .content {
-  background-color: rgb(242, 244, 239);
+  background-color: white;
 }
 #courses {
-  background-color: rgb(242, 244, 239);
+  background-color: white;
 }
 #footer {
-  background-color: rgb(242, 244, 239);
+  background-color: white;
 }
 .end {
   background-color: rgb(57, 68, 89);
 }
 .little-container {
-  background-color: #A9A9A9;
+  background-color: rgb(242, 244, 239);
 }
 .little-container:hover {
   background-color: LightGray;
@@ -46,18 +46,13 @@ Goldish --- rgb(189, 153, 79); */
 html {
   font-size: 16px;
   font-family: 'Noto sans';
-  line-height: 1.6;
-  /* background-image: url(../inspiration/pattern3.jpg);
-  background-size: cover;
-  background-repeat: no-repeat; */
-  background: linear-gradient(lightblue, white);
+  background-color: rgb(242, 244, 239);
 }
 body {
   line-height: 1.2;
 }
 h1 {
   font-size: 3rem;
-  color: #eedf65;
 }
 h2 {
   color: #191919;
@@ -67,7 +62,10 @@ h3 {
   color: #191919;
 }
 p {
-  color: #eff9e4;
+  font-family: muli;
+}
+span {
+  font-family: muli;
 }
 a {
   text-decoration: none;
@@ -111,6 +109,9 @@ a {
 .logo span:nth-child(2) {
   color: rgb(189, 153, 79);
 }
+.content .article-container .little-container .photo img:last-child{
+  display:none;
+}
 
 @media only screen and (max-width: 750px) {
   .icons {
@@ -127,11 +128,9 @@ a {
   }
   .main-banner {
     flex-direction: column;
-    background-image: repeating-linear-gradient(teal, rgb(242, 244, 239));
   }
   .main-banner .text {
     width: 80%;
-    text-align: center;
   }
   .main-banner .text h1 {
     font-size: 2rem;
@@ -155,7 +154,7 @@ a {
     margin: 1rem;
   }
   .little-container .words h3 {
-    font-size: 1rem;
+    font-size: 1.33rem;
   }
   .little-container .words p,
   .little-container .words span {
@@ -165,6 +164,95 @@ a {
   #footer h1 {
     font-size: 2rem;
   }
+}
+@media only screen and (max-width: 600px) {
+  body #banner {
+    height: 500px;
+  }
+  #courses h1,
+  #footer h1 {
+    font-size: 1.77rem;
+  }
+  .header .logo {
+    display: none;
+  }
+  .courses-container .course .img {
+    display: none;
+  }
+  .courses-container .little-container.course .font p {
+    display: none;
+  }
+  .video-item div:last-child {
+    display: none;
+  }
+  .footer .footer-content {
+    display: none;
+  }
+  .icons .unique {
+    display: inline-block;
+  }
+  .icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .content .content-container {
+    display: none;
+  }
+  .content .article-container {
+    width: 100%;
+    margin: 1rem 1rem 0 1rem;
+    align-items: center;
+  }
+  .content .article-container .little-container {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 1rem;
+    border: none;
+  }
+    .content .article-container .little-container .words {
+      text-align: center;
+    }
+    .content .article-container .little-container .photo {
+      width: 100%;
+    }
+    .content .article-container .little-container .photo img:first-child{
+      display: none;
+    }
+    .content .article-container .little-container .photo img:last-child{
+      display: inline-block;
+    }
+    .courses-container .little-container.course {
+      width: 90%;
+      margin: 0.5rem;
+    }
+
+    #courses .courses .courses-container {
+      margin: 0;
+    }
+    .courses-container .little-container.course .font h3 {
+      width: 80%;
+      padding: 1rem;
+    }
+
+    .courses-container .little-container.course .font {
+      margin: 1rem 1rem;
+    }
+
+    .footer .video-item {
+      width: 100%;
+      padding: 0;
+    }
+    .footer .video-item div {
+      margin: 0;
+      padding: 0;
+      border-bottom: 3px solid rgb(57, 68, 89);
+    }
+
+    #end {
+      height: 80px;
+    }
 }
 /* MAIN BANNER */
 #banner {
@@ -188,12 +276,12 @@ a {
 }
 .text {
   width: 40%;
-  text-align: center;
 }
 .main-banner .text {
   width: 100%;
   margin: 0 auto;
   padding: 0;
+  text-align: center;
 }
 .main.image {
   width: 60%;
@@ -224,6 +312,12 @@ a {
 .button span:hover {
   color: black;
   text-shadow: 2px 2px black;
+}
+.main-banner .text h1 {
+  color: #eedf65;
+}
+.main-banner .text p {
+  color: #eff9e4;
 }
 /* CONTENT */
 .words a {
@@ -334,7 +428,6 @@ a {
   margin: 0 auto;
   border-top: 3px solid transparent;
   border-bottom: 3px solid transparent;
-  background-color: rgb(242, 244, 239);
 }
 #footer h1 {
   width: 100%;
@@ -347,7 +440,7 @@ a {
 }
 .video-item {
   width: 60%;
-  padding: 1.5rem;
+  padding: 0 1.5rem 1.5rem 1.5rem;
 }
 .video-item  video {
   width: 100%;
@@ -357,7 +450,6 @@ a {
 .footer-content {
   display: flex;
   flex-direction: column;
-  margin-top: 1.5rem;
   width: 40%;
 }
 /* REAL FOOTER */
